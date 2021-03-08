@@ -56,6 +56,7 @@ const LanguageContextProvider = ({ children }) => {
   }, [])
 
   useEffect(() => {
+    return;
     if (selectedLanguage) {
       fetchTranslationsForSelectedLanguage(selectedLanguage)
         .then((translationApiResponse) => {
